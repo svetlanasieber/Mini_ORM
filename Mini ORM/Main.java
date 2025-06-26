@@ -5,7 +5,7 @@ import orm.MyConnector;
 import java.sql.SQLException;
 import java.time.LocalDate;
 
-public class Program {
+public class Main {
     public static void main(String[] args) throws SQLException {
         MyConnector connector = new MyConnector("mysql://localhost:3306", "root", "root", "miniorm");
         EntityManager<User> manager = new EntityManager<>(connector);
