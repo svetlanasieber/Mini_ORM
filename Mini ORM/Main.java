@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-        MyConnector connector = new MyConnector("mysql://localhost:3306", "root", "root", "miniorm");
+        MyConnector connector = new MyConnector("mysql://localhost:3306", "yourpassword", "youruser", "yourdb");
         EntityManager<User> manager = new EntityManager<>(connector);
 
         boolean createTableSuccess = manager.createTable(User.class, true);
